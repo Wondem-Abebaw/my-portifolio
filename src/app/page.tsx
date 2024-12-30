@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
 
-import { IconDownload} from "@tabler/icons-react";
+import { IconDownload } from "@tabler/icons-react";
 
 export default function Home() {
   const projectData = [
@@ -87,7 +87,7 @@ export default function Home() {
           Motivated and dynamic Web Developer with technical skills and
           creativity to develop innovative and efficient web applications.
           Education and experience in comprehensive problem solving, creative
-          troubleshooting, and complex project management. With few years
+          troubleshooting, and complex project management. With over two years
           experience as a professional Full Stack Developer with specific focus
           on Frontend, I have acquired the skills necessary to build great,
           appealing, and premium websites that meet the latest web standards.
