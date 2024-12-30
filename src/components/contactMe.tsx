@@ -1,12 +1,5 @@
-import Image from "next/image";
 import React from "react";
-import {
-  AiFillGithub,
-  AiFillGitlab,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillGitlab, AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
 const ContactMe: React.FC = () => {

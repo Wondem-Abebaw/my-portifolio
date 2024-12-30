@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
 
-import { IconDownload, IconExternalLink } from "@tabler/icons-react";
+import { IconDownload} from "@tabler/icons-react";
 
 export default function Home() {
   const projectData = [
@@ -49,7 +49,7 @@ export default function Home() {
       >
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold">
-            Hi, I'm <span className="text-indigo-500">Wondem Abebaw</span>
+            Hi, I am <span className="text-indigo-500">Wondem Abebaw</span>
           </h1>
           <p className="text-lg md:text-xl">
             Front-End Developer crafting modern, responsive web experiences.
@@ -102,7 +102,7 @@ export default function Home() {
           My Recent Projects
         </h2>
         <h5 className="text-center mb-8">
-          Here are a few projects I've worked on recently.
+          Here are a few projects I have worked on recently.
         </h5>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projectData.map((project, index) => (

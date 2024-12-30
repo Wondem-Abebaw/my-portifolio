@@ -1,7 +1,6 @@
 // components/Navbar.tsx
 import { useState } from "react";
 import { IconMenu2 as MenuIcon, IconX as CloseIcon } from "@tabler/icons-react";
-import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
