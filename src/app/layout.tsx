@@ -26,6 +26,15 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // style={{
+        //   backgroundImage: 'url("/images/starry-bg.jpg")',
+        //   backgroundRepeat: "no-repeat",
+        //   backgroundPosition: "center center",
+        //   backgroundAttachment: "fixed",
+        //   backgroundSize: "cover",
+        //   height: "100vh",
+        //   width: "100vw",
+        // }}
       >
         {children}
       </body>

@@ -52,11 +52,12 @@ export default function Home() {
             Hi, I am <span className="text-indigo-500">Wondem Abebaw</span>
           </h1>
           <p className="text-lg md:text-xl">
-            Front-End Developer crafting modern, responsive web experiences.
+            Web App and Backend Developer crafting modern, responsive web
+            experiences.
           </p>
           <div className="flex gap-4">
             <a
-              href="/Wondem resume.pdf"
+              href="/Wondem_Abebaw_Resume.pdf"
               className="px-6 py-3 bg-indigo-500 rounded hover:bg-indigo-600 flex items-center gap-2"
               target="_blank"
             >
@@ -84,15 +85,14 @@ export default function Home() {
       <section id="about" className="p-8 md:p-16">
         <h2 className="text-3xl font-bold text-indigo-500 mb-4">About Me</h2>
         <p className="text-lg leading-relaxed">
-          Motivated and dynamic Web Developer with technical skills and
-          creativity to develop innovative and efficient web applications.
-          Education and experience in comprehensive problem solving, creative
-          troubleshooting, and complex project management. With over two years
-          experience as a professional Full Stack Developer with specific focus
-          on Frontend, I have acquired the skills necessary to build great,
-          appealing, and premium websites that meet the latest web standards.
-          Accomplished with effective collaboration skills, team building
-          capabilities and leadership in diverse and multifaceted operations.
+          Highly motivated and creative Full Stack Developer With Specialization
+          in Front-End Development, with hands-on experience building modern,
+          scalable web applications using React, Next.js, Next Js,Tailwind CSS,
+          and different UI libraries. Proven success in creating intuitive admin
+          dashboards, dynamic UI components, and fully responsive applications
+          across sectors including healthcare, education, transport, and social
+          platforms. Adept at collaborating with cross-functional teams to solve
+          real-world problems and deliver high-performance products.
         </p>
       </section>
 
