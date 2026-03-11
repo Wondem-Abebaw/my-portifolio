@@ -12,14 +12,14 @@ const ContactMe: React.FC = () => {
         Feel free to <span className="text-primary">connect</span> with me
       </p>
       <div className="flex justify-center space-x-8">
-        <a
+        {/* <a
           href="https://gitlab.com/Wondem-Abebaw"
           target="_blank"
           rel="noopener noreferrer"
           className="icon-wrapper group"
         >
           <AiFillGitlab className="social-icon" />
-        </a>
+        </a> */}
         <a
           href="https://github.com/Wondem-Abebaw"
           target="_blank"
