@@ -17,7 +17,6 @@ export default function ProjectCard({
   title,
   description,
   link,
-  tags = [],
   highlight = false,
   alt = "",
 }: ProjectCardProps) {

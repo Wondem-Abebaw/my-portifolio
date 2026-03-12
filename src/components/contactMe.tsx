@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillGithub, AiFillGitlab, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
 const ContactMe: React.FC = () => {

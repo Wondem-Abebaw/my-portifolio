@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
-import { IconDownload, IconArrowRight } from "@tabler/icons-react";
+import {  IconArrowRight } from "@tabler/icons-react";
 
 export default function Home() {
   const projectData = [
