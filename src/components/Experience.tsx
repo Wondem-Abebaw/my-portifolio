@@ -63,63 +63,63 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-[#0F0F0F] py-20">
+    <section id="experience" className="bg-[#111827] py-20">
       <div className="max-w-6xl mx-auto px-6 md:px-20">
-        <p className="text-[#D4A853] text-xs tracking-[0.2em] uppercase font-medium mb-3">
+        <p className="text-[#6366F1] text-xs tracking-[0.2em] uppercase font-medium mb-3">
           Career
         </p>
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-2 tracking-tight text-[#F0EDE8]">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-2 tracking-tight text-[#FFFFFF]">
           Work Experience
         </h2>
-        <div className="w-12 h-[3px] bg-[#D4A853] mb-12" />
+        <div className="w-12 h-[3px] bg-[#6366F1] mb-12" />
 
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-0 top-2 bottom-0 w-px bg-[#2A2A2A] hidden md:block" />
+          <div className="absolute left-0 top-2 bottom-0 w-px bg-[#374151] hidden md:block" />
 
           <div className="flex flex-col gap-10">
             {experiences.map((exp, i) => (
               <div key={i} className="relative md:grid md:grid-cols-[180px_1fr] md:gap-10">
                 {/* Dot */}
                 <div
-                  className={`absolute left-[-5px] top-2 w-2.5 h-2.5 rounded-full border-2 border-[#0F0F0F] hidden md:block ${
-                    exp.current ? "bg-[#D4A853] shadow-[0_0_0_4px_rgba(212,168,83,0.15)]" : "bg-[#2A2A2A]"
+                  className={`absolute left-[-5px] top-2 w-2.5 h-2.5 rounded-full border-2 border-[#111827] hidden md:block ${
+                    exp.current ? "bg-[#6366F1] shadow-[0_0_0_4px_rgba(212,168,83,0.15)]" : "bg-[#374151]"
                   }`}
                 />
 
                 {/* Meta */}
                 <div className="md:pl-6 mb-3 md:mb-0">
-                  <p className="text-[#D4A853] text-xs font-medium tracking-wider uppercase">
+                  <p className="text-[#6366F1] text-xs font-medium tracking-wider uppercase">
                     {exp.period}
                   </p>
-                  <p className="text-[#9A9590] text-xs font-light mt-1">
+                  <p className="text-[#9CA3AF] text-xs font-light mt-1">
                     {exp.location}
                   </p>
                 </div>
 
                 {/* Card */}
                 <div
-                  className={`bg-[#161616] border p-6 ${
-                    exp.current ? "border-[#D4A853]/30" : "border-[#2A2A2A]"
+                  className={`bg-[#1F2937] border p-6 ${
+                    exp.current ? "border-[#6366F1]/30" : "border-[#374151]"
                   }`}
                 >
                   <div className="flex items-center gap-3 flex-wrap mb-1">
-                    <h3 className="text-[#F0EDE8] font-bold text-lg">
+                    <h3 className="text-[#FFFFFF] font-bold text-lg">
                       {exp.role}
                     </h3>
                     {exp.current && (
-                      <span className="text-[10px] font-bold tracking-[0.12em] uppercase px-2 py-0.5 bg-[#D4A853]/10 text-[#D4A853] border border-[#D4A853]/30">
+                      <span className="text-[10px] font-bold tracking-[0.12em] uppercase px-2 py-0.5 bg-[#6366F1]/10 text-[#6366F1] border border-[#6366F1]/30">
                         Current
                       </span>
                     )}
                   </div>
-                  <p className="text-[#D4A853] text-sm mb-4">{exp.company}</p>
+                  <p className="text-[#6366F1] text-sm mb-4">{exp.company}</p>
                   <ul className="flex flex-col gap-2">
                     {exp.highlights.map((h, j) => (
                       <li
                         key={j}
-                        className="text-[#9A9590] text-sm font-light leading-relaxed pl-4 relative before:content-['→'] before:absolute before:left-0 before:text-[#D4A853]/50 before:text-xs before:top-[2px]"
+                        className="text-[#9CA3AF] text-sm font-light leading-relaxed pl-4 relative before:content-['→'] before:absolute before:left-0 before:text-[#6366F1]/50 before:text-xs before:top-[2px]"
                       >
                         {h}
                       </li>
