@@ -9,6 +9,7 @@ interface ProjectCardProps {
   link: string;
   tags?: string[];
   highlight?: boolean;
+  alt?: string;
 }
 
 export default function ProjectCard({
@@ -18,6 +19,7 @@ export default function ProjectCard({
   link,
   tags = [],
   highlight = false,
+  alt = "",
 }: ProjectCardProps) {
   return (
     <div
@@ -36,7 +38,7 @@ export default function ProjectCard({
       <div className="relative h-48 bg-[#1E1E1E] overflow-hidden">
         <Image
           src={image}
-          alt={title}
+          alt={alt}
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, 400px"
