@@ -1,28 +1,41 @@
 "use client";
+import {
+  IconBriefcase,
+  IconMapPin,
+  IconCalendar,
+  IconCircleCheck,
+} from "@tabler/icons-react";
 
-const experiences = [
+interface WorkExperience {
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  current?: boolean;
+  tags?: string[];
+  highlights: string[];
+}
+
+const experiences: WorkExperience[] = [
   {
-    role: "Senior Front End Developer",
+    role: "Senior Software Engineer",
     company: "EagleLion System Technology",
     period: "Aug 2025 – Present",
     location: "Addis Ababa, Ethiopia",
     current: true,
-    highlights: [
-      "Building high-security web applications for Dashen Bank S.C. and Choice Microfinance.",
-      "Developed the Super App Central Portal managing 2M+ users and 220B+ ETB in transactions.",
-      "Leading development of Dashen Bank's Paperless Banking system — client, branch, and central portals.",
+    tags: [
+      "Banking & Fintech",
+      "Next.js",
+      "NestJS",
+      "Kafka",
+      "Microservices",
+      "PostgreSQL",
     ],
-  },
-  {
-    role: "Front End Developer",
-    company: "ArifGet",
-    period: "Jan 2025 – Aug 2025",
-    location: "Remote",
-    current: false,
     highlights: [
-      "Built a high-performance admin dashboard for an online course & job matching platform.",
-      "Optimized frontend performance and improved component reusability across the application.",
-      "Participated in UI/UX planning and feature rollout strategy with cross-functional teams.",
+      "Developing mission-critical applications for tier-1 financial institutions including Dashen Bank S.C. and Choice Microfinance.",
+      "Contributing to architecture, system scalability, and service design decisions while conducting rigorous code reviews to enforce software reliability.",
+      "Engineered high-security administrative portals for Dashen Bank Super App, serving 2M+ active users and processing 500B+ ETB in transactions.",
+      "Architecting Dashen Bank Paperless Banking ecosystem (client web app, branch portal, central admin) to digitize workflows and eliminate physical paper processing.",
     ],
   },
   {
@@ -31,21 +44,45 @@ const experiences = [
     period: "Aug 2023 – Aug 2025",
     location: "Addis Ababa, Ethiopia",
     current: false,
+    tags: [
+      "React / Next.js",
+      "Node.js",
+      "NestJS",
+      "Express",
+      "PostgreSQL",
+      "REST APIs",
+    ],
     highlights: [
-      "Led architectural design for high-security admin portals across U.S. and Ethiopian platforms.",
-      "Shipped key features for LINQ Solutions (USA), Cheetah, Tuteapp, and Emebet.",
-      "Resolved 100+ frontend and backend issues; designed and implemented RESTful APIs.",
-      "Managed authentication flows, deployment pipelines, and database optimizations.",
+      "Led architectural design for high-security admin portals and robust APIs for U.S.-based transport system (LINQ Solutions), ride-hailing (Cheetah), tutoring (Tuteapp), and job-matching (Emebet).",
+      "Developed scalable, modular React components with Next.js while building resilient backend microservices and RESTful endpoints using Node.js, Express, NestJS, and PostgreSQL.",
+      "Designed database schemas, optimized SQL indexing and query efficiency, and established secure JWT/OAuth authentication and role-based access control.",
+      "Mentored junior developers on engineering design patterns, test coverage, and automated deployment pipelines.",
+      "Collaborated cross-functionally across product, design, and DevOps to deliver seamless user experiences and continuous integration.",
     ],
   },
   {
     role: "Web App Developer",
     company: "Swift Technologies PLC",
-    period: "Jun 2022 – Jan 2023",
+    period: "June 2025 – Jan 2026",
     location: "Addis Ababa, Ethiopia",
     current: false,
+    tags: ["Full-Stack", "EdTech", "Web Applications", "JavaScript"],
     highlights: [
-      "Developed a complete web application for an educational platform from the ground up.",
+      "Developed an end-to-end web application for a modern educational platform.",
+      "Engineered core modules for student enrollment, content delivery, and user management with an emphasis on high responsiveness.",
+    ],
+  },
+  {
+    role: "Front End Developer",
+    company: "ArifGet – Online Course & Job Matching Platform",
+    period: "Jan 2025 – Aug 2025",
+    location: "Remote / Hybrid",
+    current: false,
+    tags: ["React", "UI/UX", "State Management", "Performance Optimization"],
+    highlights: [
+      "Developed a high-performance admin dashboard using React for a platform bridging job seekers and educational content providers.",
+      "Optimized frontend rendering performance, reduced bundle sizes, and improved reusable component libraries.",
+      "Participated actively in UI/UX planning, design systems, and staged feature rollout strategies with cross-functional product teams.",
     ],
   },
   {
@@ -54,77 +91,126 @@ const experiences = [
     period: "May 2023 – Aug 2023",
     location: "Addis Ababa, Ethiopia",
     current: false,
+    tags: ["Healthcare IT", "EMR Refactoring", "Modern JavaScript"],
     highlights: [
-      "Modernized a hospital medical record system by refactoring legacy code.",
-      "Integrated modern JavaScript frameworks into existing healthcare infrastructure.",
+      "Modernized a legacy hospital electronic medical records (EMR) system by refactoring outdated codebases into modular JavaScript frameworks.",
+      "Improved system responsiveness, data integrity, and clinical user workflows for healthcare personnel.",
     ],
   },
 ];
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-[#111827] py-20">
-      <div className="max-w-6xl mx-auto px-6 md:px-20">
-        <p className="text-[#6366F1] text-xs tracking-[0.2em] uppercase font-medium mb-3">
-          Career
-        </p>
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-2 tracking-tight text-[#FFFFFF]">
-          Work Experience
-        </h2>
-        <div className="w-12 h-[3px] bg-[#6366F1] mb-12" />
+    <section
+      id="experience"
+      className="bg-[#111827] py-24 relative overflow-hidden"
+    >
+      {/* Background ambient gradient */}
+      <div className="absolute top-1/4 -right-40 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 -left-40 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto px-6 md:px-20 relative z-10">
+        <div className="flex flex-col items-start mb-16">
+          <p className="text-[#6366F1] text-xs tracking-[0.2em] uppercase font-semibold mb-2">
+            Career Timeline
+          </p>
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white">
+            Professional Experience
+          </h2>
+          <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mt-3 mb-4" />
+          <p className="text-gray-400 text-sm md:text-base max-w-2xl font-light">
+            3+ years of engineering enterprise fintech platforms, cloud
+            microservices, and high-load web systems across Ethiopia and the
+            United States.
+          </p>
+        </div>
 
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-0 top-2 bottom-0 w-px bg-[#374151] hidden md:block" />
+          <div className="absolute left-4 md:left-[190px] top-4 bottom-4 w-px bg-gradient-to-b from-indigo-500 via-gray-700 to-transparent" />
 
           <div className="flex flex-col gap-10">
             {experiences.map((exp, i) => (
-              <div key={i} className="relative md:grid md:grid-cols-[180px_1fr] md:gap-10">
-                {/* Dot */}
+              <div
+                key={i}
+                className="relative flex flex-col md:grid md:grid-cols-[170px_1fr] md:gap-10 pl-10 md:pl-0"
+              >
+                {/* Timeline Node Dot */}
                 <div
-                  className={`absolute left-[-5px] top-2 w-2.5 h-2.5 rounded-full border-2 border-[#111827] hidden md:block ${
-                    exp.current ? "bg-[#6366F1] shadow-[0_0_0_4px_rgba(212,168,83,0.15)]" : "bg-[#374151]"
+                  className={`absolute left-[11px] md:left-[185px] top-6 w-3 h-3 rounded-full -translate-x-1/2 border-2 transition-all duration-300 ${
+                    exp.current
+                      ? "bg-indigo-500 border-white shadow-[0_0_12px_rgba(99,102,241,0.8)] scale-125"
+                      : "bg-gray-800 border-gray-600"
                   }`}
                 />
 
-                {/* Meta */}
-                <div className="md:pl-6 mb-3 md:mb-0">
-                  <p className="text-[#6366F1] text-xs font-medium tracking-wider uppercase">
+                {/* Left Period & Meta */}
+                <div className="md:text-right pr-6 mb-2 md:mb-0 pt-5">
+                  <p className="text-indigo-400 text-xs font-semibold tracking-wider uppercase">
                     {exp.period}
                   </p>
-                  <p className="text-[#9CA3AF] text-xs font-light mt-1">
+                  <p className="text-gray-400 text-xs flex items-center md:justify-end gap-1 mt-1 font-light">
+                    <IconMapPin size={13} className="text-gray-500" />
                     {exp.location}
                   </p>
                 </div>
 
-                {/* Card */}
+                {/* Right Experience Card */}
                 <div
-                  className={`bg-[#1F2937] border p-6 ${
-                    exp.current ? "border-[#6366F1]/30" : "border-[#374151]"
+                  className={`relative rounded-2xl bg-[#1F2937]/90 border p-6 md:p-8 backdrop-blur-sm transition-all duration-300 hover:border-indigo-500/40 hover:shadow-xl hover:shadow-indigo-500/5 ${
+                    exp.current
+                      ? "border-indigo-500/50 shadow-lg shadow-indigo-500/10"
+                      : "border-gray-800"
                   }`}
                 >
-                  <div className="flex items-center gap-3 flex-wrap mb-1">
-                    <h3 className="text-[#FFFFFF] font-bold text-lg">
-                      {exp.role}
-                    </h3>
-                    {exp.current && (
-                      <span className="text-[10px] font-bold tracking-[0.12em] uppercase px-2 py-0.5 bg-[#6366F1]/10 text-[#6366F1] border border-[#6366F1]/30">
-                        Current
-                      </span>
-                    )}
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                    <div className="flex items-center gap-3 flex-wrap">
+                      <h3 className="text-white font-extrabold text-xl md:text-2xl">
+                        {exp.role}
+                      </h3>
+                      {exp.current && (
+                        <span className="text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 animate-pulse">
+                          Current Role
+                        </span>
+                      )}
+                    </div>
                   </div>
-                  <p className="text-[#6366F1] text-sm mb-4">{exp.company}</p>
-                  <ul className="flex flex-col gap-2">
+
+                  <p className="text-indigo-400 text-base font-medium mb-4 flex items-center gap-2">
+                    <IconBriefcase size={18} className="text-indigo-400" />
+                    {exp.company}
+                  </p>
+
+                  {/* Highlights */}
+                  <ul className="flex flex-col gap-3 mb-6">
                     {exp.highlights.map((h, j) => (
                       <li
                         key={j}
-                        className="text-[#9CA3AF] text-sm font-light leading-relaxed pl-4 relative before:content-['→'] before:absolute before:left-0 before:text-[#6366F1]/50 before:text-xs before:top-[2px]"
+                        className="text-gray-300 text-sm font-light leading-relaxed flex items-start gap-2.5"
                       >
-                        {h}
+                        <IconCircleCheck
+                          size={18}
+                          className="text-indigo-400 flex-shrink-0 mt-0.5"
+                        />
+                        <span>{h}</span>
                       </li>
                     ))}
                   </ul>
+
+                  {/* Tags */}
+                  {exp.tags && (
+                    <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-800/80">
+                      {exp.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-gray-900/80 border border-gray-700/60 text-gray-300"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
