@@ -19,30 +19,39 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Wondem Abebaw | Senior Full-Stack Developer & Applied AI Engineer",
+  title: "Wondem Abebaw | Senior Software Engineer",
   description:
-    "Senior Full-Stack Developer and Applied AI Engineer with 3+ years of production experience in banking (2M+ users, 500B+ ETB), microservices, event-driven systems (Kafka/RabbitMQ), and multi-agent AI/RAG architectures.",
+    "Senior Software Engineer with 4+ years of experience designing and delivering production-grade software across banking (3M+ users, 500B+ ETB in transactions), fintech, distributed systems, event-driven architectures (Kafka/RabbitMQ), cloud-native platforms, and AI engineering.",
   keywords: [
     "Wondem Abebaw",
-    "Senior Full-Stack Developer",
-    "Applied AI Engineer",
-    "LangGraph",
-    "LangChain",
-    "RAG",
-    "Next.js Developer",
+    "Senior Software Engineer",
+    "Backend Engineering",
+    "Distributed Systems",
+    "Fintech & Banking",
+    "Microservices Architecture",
+    "Clean Architecture",
+    "TypeScript",
+    "Node.js",
     "NestJS",
-    "FastAPI",
-    "Golang",
-    "Kafka",
-    "Fintech Engineer",
+    "Python",
+    "Go",
+    "React",
+    "Next.js",
+    "Apache Kafka",
+    "RabbitMQ",
+    "PostgreSQL",
+    "Docker",
+    "Kubernetes",
+    "LangGraph",
+    "RAG",
     "Ethiopia Software Engineer",
   ],
   authors: [{ name: "Wondem Abebaw" }],
   creator: "Wondem Abebaw",
   openGraph: {
-    title: "Wondem Abebaw | Senior Full-Stack Developer & Applied AI Engineer",
+    title: "Wondem Abebaw | Senior Software Engineer",
     description:
-      "Full-stack software engineer with 3+ years of production experience across backend, frontend, cloud-native systems, and applied AI.",
+      "Senior Software Engineer with 4+ years of experience designing and delivering production-grade software across banking, fintech, distributed systems, and AI engineering.",
     url: "https://wondemabebaw.dev",
     siteName: "Wondem Abebaw Portfolio",
     locale: "en_US",
@@ -50,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wondem Abebaw | Senior Full-Stack Developer & Applied AI Engineer",
+    title: "Wondem Abebaw | Senior Software Engineer",
     description:
-      "Senior Full-Stack Developer & Applied AI Engineer with 3+ years building banking, microservices, and multi-agent AI systems.",
+      "Senior Software Engineer with 4+ years of experience delivering scalable backend systems, microservices, and modern web applications.",
   },
 };
 

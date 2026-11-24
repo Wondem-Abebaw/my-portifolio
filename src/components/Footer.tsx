@@ -14,7 +14,7 @@ export default function Footer() {
             Wondem<span className="text-indigo-400">.Abebaw</span>
           </p>
           <p className="text-xs text-gray-500 mt-1 font-light">
-            Senior Full-Stack Developer | Applied AI Engineer
+            Senior Software Engineer
           </p>
           <p className="text-xs text-gray-500 mt-1">
             © {new Date().getFullYear()} Wondem Abebaw. All rights reserved.

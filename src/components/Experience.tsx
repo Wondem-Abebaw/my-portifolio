@@ -2,7 +2,6 @@
 import {
   IconBriefcase,
   IconMapPin,
-  IconCalendar,
   IconCircleCheck,
 } from "@tabler/icons-react";
 
@@ -20,81 +19,104 @@ const experiences: WorkExperience[] = [
   {
     role: "Senior Software Engineer",
     company: "EagleLion System Technology",
-    period: "Aug 2025 – Present",
+    period: "August 2025 – Present",
     location: "Addis Ababa, Ethiopia",
     current: true,
     tags: [
       "Banking & Fintech",
-      "Next.js",
-      "NestJS",
-      "Kafka",
+      "Distributed Systems",
       "Microservices",
+      "NestJS",
+      "Next.js",
+      "Kafka",
       "PostgreSQL",
     ],
     highlights: [
-      "Developing mission-critical applications for tier-1 financial institutions including Dashen Bank S.C. and Choice Microfinance.",
-      "Contributing to architecture, system scalability, and service design decisions while conducting rigorous code reviews to enforce software reliability.",
-      "Engineered high-security administrative portals for Dashen Bank Super App, serving 2M+ active users and processing 500B+ ETB in transactions.",
-      "Architecting Dashen Bank Paperless Banking ecosystem (client web app, branch portal, central admin) to digitize workflows and eliminate physical paper processing.",
+      "Develop and maintain production-grade software solutions for financial institutions, including Dashen Bank S.C. and Choice Microfinance.",
+      "Participate in architectural discussions, technical decision-making, and code reviews to maintain engineering quality and consistency.",
+      "Collaborate with cross-functional engineering teams to deliver reliable features and resolve complex technical challenges.",
+      "Contribute to application optimization, debugging, and continuous improvement of production systems.",
+      "Collaborated with product and engineering teams to translate business requirements into scalable technical solutions.",
+    ],
+  },
+  {
+    role: "Lead Web App Developer",
+    company: "Swift Technologies PLC",
+    period: "Jan 2026 – Present",
+    location: "Addis Ababa, Ethiopia",
+    current: true,
+    tags: [
+      "Full-Stack",
+      "Web Applications",
+      "React",
+      "Next.js",
+      "EdTech",
+      "Booking Platforms",
+    ],
+    highlights: [
+      "Designed and developed a complete web application for an educational platform.",
+      "Designed and developed a complete web application for a booking platform for agriturismos in Italy.",
     ],
   },
   {
     role: "Full-Stack Developer",
     company: "Vintage Technologies PLC",
-    period: "Aug 2023 – Aug 2025",
+    period: "August 2023 – August 2025",
     location: "Addis Ababa, Ethiopia",
     current: false,
     tags: [
-      "React / Next.js",
+      "Clean Architecture",
       "Node.js",
+      "Express.js",
       "NestJS",
-      "Express",
-      "PostgreSQL",
+      "React",
+      "Next.js",
       "REST APIs",
+      "PostgreSQL",
     ],
     highlights: [
-      "Led architectural design for high-security admin portals and robust APIs for U.S.-based transport system (LINQ Solutions), ride-hailing (Cheetah), tutoring (Tuteapp), and job-matching (Emebet).",
-      "Developed scalable, modular React components with Next.js while building resilient backend microservices and RESTful endpoints using Node.js, Express, NestJS, and PostgreSQL.",
-      "Designed database schemas, optimized SQL indexing and query efficiency, and established secure JWT/OAuth authentication and role-based access control.",
-      "Mentored junior developers on engineering design patterns, test coverage, and automated deployment pipelines.",
-      "Collaborated cross-functionally across product, design, and DevOps to deliver seamless user experiences and continuous integration.",
+      "Led architectural design and development of secure, scalable administrative portals and backend APIs for multiple production platforms across transportation, ride-hailing, education, and job-matching domains.",
+      "Designed and implemented modular backend services using Node.js, Express.js, and NestJS, following clean architecture principles and separation of concerns.",
+      "Developed RESTful APIs and system integrations, ensuring reliable communication between frontend applications and backend services.",
+      "Built responsive, reusable, and high-performance frontend applications using React and Next.js.",
+      "Mentored junior developers, conducted code reviews, and promoted maintainable coding practices.",
     ],
   },
   {
-    role: "Web App Developer",
-    company: "Swift Technologies PLC",
-    period: "June 2025 – Jan 2026",
-    location: "Addis Ababa, Ethiopia",
-    current: false,
-    tags: ["Full-Stack", "EdTech", "Web Applications", "JavaScript"],
-    highlights: [
-      "Developed an end-to-end web application for a modern educational platform.",
-      "Engineered core modules for student enrollment, content delivery, and user management with an emphasis on high responsiveness.",
-    ],
-  },
-  {
-    role: "Front End Developer",
+    role: "Lead Front End Developer",
     company: "ArifGet – Online Course & Job Matching Platform",
-    period: "Jan 2025 – Aug 2025",
-    location: "Remote / Hybrid",
+    period: "January 2025 – August 2025",
+    location: "Addis Ababa, Ethiopia / Remote",
     current: false,
-    tags: ["React", "UI/UX", "State Management", "Performance Optimization"],
+    tags: [
+      "React",
+      "UI/UX",
+      "Admin Dashboards",
+      "Performance Optimization",
+      "Reusable Components",
+    ],
     highlights: [
-      "Developed a high-performance admin dashboard using React for a platform bridging job seekers and educational content providers.",
-      "Optimized frontend rendering performance, reduced bundle sizes, and improved reusable component libraries.",
-      "Participated actively in UI/UX planning, design systems, and staged feature rollout strategies with cross-functional product teams.",
+      "Developed a high-performance administrative dashboard using React.",
+      "Designed reusable frontend components and optimized application performance.",
+      "Collaborated with cross-functional teams on UI/UX improvements and feature delivery.",
     ],
   },
   {
     role: "Junior Software Developer",
     company: "AIT Technology PLC",
-    period: "May 2023 – Aug 2023",
+    period: "Oct 2022 – August 2023",
     location: "Addis Ababa, Ethiopia",
     current: false,
-    tags: ["Healthcare IT", "EMR Refactoring", "Modern JavaScript"],
+    tags: [
+      "Healthcare IT",
+      "EMR Refactoring",
+      "Modern JavaScript",
+      "System Integration",
+    ],
     highlights: [
-      "Modernized a legacy hospital electronic medical records (EMR) system by refactoring outdated codebases into modular JavaScript frameworks.",
-      "Improved system responsiveness, data integrity, and clinical user workflows for healthcare personnel.",
+      "Contributed to the modernization of a hospital medical record system.",
+      "Refactored legacy application components and integrated modern JavaScript frontend technologies.",
+      "Supported application improvements and system integration.",
     ],
   },
 ];
@@ -119,9 +141,8 @@ export default function Experience() {
           </h2>
           <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mt-3 mb-4" />
           <p className="text-gray-400 text-sm md:text-base max-w-2xl font-light">
-            3+ years of engineering enterprise fintech platforms, cloud
-            microservices, and high-load web systems across Ethiopia and the
-            United States.
+            4+ years of engineering enterprise fintech platforms, distributed microservices,
+            and high-load web systems across Ethiopia and international markets.
           </p>
         </div>
 

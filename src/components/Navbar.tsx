@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import {
   IconMenu2 as MenuIcon,
   IconX as CloseIcon,
-  IconDownload,
 } from "@tabler/icons-react";
 
 const navLinks = [
@@ -62,13 +61,10 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="/Wondem_Abebaw_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="inline-flex items-center gap-1.5 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold tracking-wider uppercase transition-all shadow-md shadow-indigo-600/20 hover:shadow-indigo-600/40"
           >
-            <IconDownload size={14} />
-            CV / Resume
+            Contact Me
           </a>
         </div>
 
@@ -95,17 +91,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-
-          <a
-            href="/Wondem_Abebaw_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setMenuOpen(false)}
-            className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-sm font-bold tracking-wider uppercase shadow-lg shadow-indigo-600/30"
-          >
-            <IconDownload size={18} />
-            Download CV
-          </a>
         </div>
       )}
     </>
